@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PhoneShop1</string>
+    <string name="zagolovok">Сеть магазинов по продаже телефонов</string>
+    <string name="vybor">Выберете город</string>
+    <string name="mosow">Москва</string>
+    <string name="peterburg">Петербург</string>
+    <string name="exit">Выход</string>
+    <string name="moscow_sell">продажа телефонов в Москве</string>
+    <string name="model">Model</string>
+    <string name="price">Price</string>
+    <string name="sold">Sold</string>
+    <string name="all_sold">Всего куплено</string>
+    <string name="repair">Ремонт</string>
+    <string name="peterburg_sold">продажа телефонов в Петербурге</string>
+</resources>
