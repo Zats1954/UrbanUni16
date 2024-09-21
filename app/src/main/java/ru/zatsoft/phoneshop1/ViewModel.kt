@@ -12,13 +12,9 @@ class ViewModel : ViewModel() {
         "POCO X6 PRO 5G 12GB",
         "Sony Xperia 10 VI 5G 8GB"
     )
-    private val _listPhones:  MutableList<Phone> = mutableListOf()
+    private var _listPhones:  MutableList<Phone> = mutableListOf()
     val listPhones: List<Phone>
         get() = _listPhones
-
-    fun add(phone: Phone) {
-        _listPhones.add(phone)
-    }
 
     fun soldCount(): Int {
         var count = 0
@@ -30,7 +26,7 @@ class ViewModel : ViewModel() {
         val maxIndex = min(listPrices.size, listModels.size)
 //  Заполняем прайслист только моделями с заданной ценой
         for (i in 0..maxIndex - 1) {
-            listPrices?.get(i)?.let{
+            listPrices.get(i)?.let{
             _listPhones.add(Phone(listModels[i], it))}
         }
     }
